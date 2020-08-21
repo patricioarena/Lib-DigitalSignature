@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "bl": "ng build lib-digitalsignature && ng serve",
-    "blp": "ng build lib-digitalsignature --prod"
+    "blp": "ng build lib-digitalsignature --prod",
+    "increment": "version --path",
+    "v": "cd dist/lib-digitalsignature && ls"
   },
   "private": true,
   "dependencies": {
