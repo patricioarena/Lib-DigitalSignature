@@ -1,6 +1,6 @@
 {
   "name": "lib-digitalsignature",
-  "version": "0.0.108",
+  "version": "0.0.8",
   "description": "A library for interaction with digital signature program",
   "private": false,
   "readme": "README.md",
@@ -9,6 +9,9 @@
   "author": {
     "name": "Patricio E. Arena (TotallyInformation)",
     "url": ""
+  },
+  "scripts": {
+    "deploy": "yarn version --patch && yarn build-prod && yarn publish && echo \"Successfully released version $npm_package_version!\""
   },
   "keywords": [
     "digital-signature",
