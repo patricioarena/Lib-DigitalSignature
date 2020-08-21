@@ -1,6 +1,6 @@
 {
   "name": "search-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "bl": "ng build lib-digitalsignature && ng serve",
     "blp": "ng build lib-digitalsignature --prod",
-    "increment": "version --path",
+    "increment": "yarn version --patch",
     "v": "cd dist/lib-digitalsignature && ls"
   },
   "private": true,
