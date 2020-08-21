@@ -1,6 +1,6 @@
 {
   "name": "search-app",
-  "version": "0.0.13",
+  "version": "0.0.8",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
