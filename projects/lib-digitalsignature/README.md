@@ -60,11 +60,13 @@ Import `NgxSpinnerModule` in in the root module(`AppModule`):
 ```typescript
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 // Import library module
+import { HttpClientModule } from "@angular/common/http";
 import { DigitalSignatureModule } from "lib-digitalsignature";
 
 @NgModule({
   imports: [
     // ...
+    HttpClientModule,
     DigitalSignatureModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-prod": "ng build lib-digitalsignature --prod",
+    "increment-lib-version": "cd projects/lib-digitalsignature && yarn version --no-git-tag-version",
+    "build-lib": "yarn increment-lib-version && yarn build-prod && echo \"execute npm public in dist/lib-digitalsignature\""
   },
   "private": true,
   "dependencies": {
