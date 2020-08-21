@@ -1,6 +1,6 @@
 {
   "name": "search-app",
-  "version": "0.0.103",
+  "version": "0.0.104",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,8 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "bl": "ng build lib-digitalsignature && ng serve",
-    "blp": "ng build lib-digitalsignature --prod && yarn move && yarn version --patch",
-    "v": "yarn version --patch && cd projects/lib-digitalsignature && yarn version --patch"
+    "blp": "ng build lib-digitalsignature --prod",
+    "v": "yarn version --patch && cd projects/lib-digitalsignature && yarn version --patch && ng build lib-digitalsignature --prod "
   },
   "private": true,
   "dependencies": {
