@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { DigitalSignatureModule } from "dist/lib-digitalsignature";
+import { DigitalSignatureModule, DigitalSignatureService, TiposDeFirma, XmlModel } from "dist/lib-digitalsignature";
+// import { DigitalSignatureModule, DigitalSignatureService, TiposDeFirma, XmlModel } from "../../../projects/lib-digitalsignature/src/public-api";
 // import { DigitalSignatureModule, DigitalSignatureService, TiposDeFirma, XmlModel } from "lib-digitalsignature";
 // import { saveAs } from "file-saver";
 // import { NgxSpinnerService } from "ngx-spinner";
