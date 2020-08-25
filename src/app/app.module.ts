@@ -17,9 +17,6 @@ import { FileUploadModule } from "ng2-file-upload";
 import { HttpClientModule } from "@angular/common/http";
 import { DigitalSignatureModule } from "dist/lib-digitalsignature";
 
-import { NgxSpinnerModule } from "ngx-spinner";
-import { NgxSpinnerService } from "ngx-spinner";
-
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ClipboardModule } from "ngx-clipboard";
 import { ToastrModule } from "ngx-toastr";
@@ -28,7 +25,6 @@ import { HeaderComponent } from "./header/header.component";
 import { ModalComponent } from "./modal/modal.component";
 import { RoutingModule } from "./modules/routing.module";
 import { NotificationService } from "./service/notification.service";
-import { TitleService } from "./service/title.service";
 
 @NgModule({
   declarations: [
@@ -51,16 +47,13 @@ import { TitleService } from "./service/title.service";
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
-    NgxSpinnerModule,
     TooltipModule.forRoot(),
     RoutingModule,
     DigitalSignatureModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
-    NgxSpinnerService,
-    NotificationService,
-    TitleService,
+    NotificationService
   ],
   bootstrap: [AppComponent],
   entryComponents: [ModalComponent],
